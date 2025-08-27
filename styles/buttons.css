@@ -1,0 +1,53 @@
+.subscribe-button{
+        background-color: rgb(203, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-right: 8px;
+        padding-bottom: 10px; /*artik text uzarsada ayari bozulmaz height width cok tavsiye edilmez*/
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        vertical-align: top;
+      }
+      
+      .subscribe-button:hover{
+        opacity: 0.7;
+        transition: opacity 0.25s,
+        box-shadow 0.25s ;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.25) ;
+      }
+      
+      .subscribe-button:active{
+        opacity: 0.4;
+      }
+
+      .join-button{
+        background-color: white;
+        color: purple;
+        height: 36px;
+        width: 105px;
+        border-radius: 16px;
+        border-color: rgb(55, 0, 143);
+        border-width: 1px;
+        border-style: solid;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        vertical-align: top;
+      }
+
+      .join-button:hover{
+        color: white;
+        background-color:purple ;
+        transition: background-color 0.25s,
+        color 0.25s ;
+      }
+
+      .join-button:active{
+        opacity: 0.7;
+      }
