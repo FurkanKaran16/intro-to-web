@@ -2,11 +2,31 @@
 <html>
   <head>
     <title>DOM Projects</title>
-
+    <style>
+      body{
+        font-family: Arial;
+      }
+      
+      .subscribe-button{
+        border: none;
+        border-radius: 50px;
+        color: white;
+        background-color: black;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      
+      .is-subscribed{
+        background-color: rgb(240, 240, 240);
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <p>YouTube Subscribe Button</p>
-    <button onclick="subscribe();" class="js-subscribe-button">Subscribe
+     <button onclick="subscribe();" class="js-subscribe-button subscribe-button">Subscribe <!--burda iki class var aradaki bosluk onlari ayirir -->
     </button>
     
     <p>Amazon Shipping Calculator</p>
@@ -37,8 +57,10 @@
         
         if (buttonElement.innerText === "Subscribe") {
           buttonElement.innerHTML = "Subscribed";
+          buttonElement.classList.add("is-subscribed");
         } else {
           buttonElement.innerHTML = "Subscribe";
+          buttonElement.classList.remove("is-subscribed"); // remove olmazsa renk gri olarak kalır tekrar basilsada
         }
       }
 
